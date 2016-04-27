@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.natashafinnegan.nihapp.LoginActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/background"
+        android:contentDescription="background"
+        android:id="@+id/background"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/centerBox"
+        android:background="#ffffff"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appName"
+        android:text="@string/appName"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/centerBox"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        />
+
+    <ImageView
+        android:layout_width="43dp"
+        android:layout_height="48dp"
+        android:src="@drawable/microscope"
+        android:id="@+id/microscope"
+        android:layout_alignTop="@+id/centerBox"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/appName"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        />
+
+
+</RelativeLayout>
