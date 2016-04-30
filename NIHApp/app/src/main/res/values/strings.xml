@@ -3,8 +3,9 @@
 
     <!--Login Activity Strings-->
     <string name="login">Login</string>
-    <string name="username">Username</string>
+    <string name="username">Enter Username</string>
     <string name="password">Password</string>
+    <string name="enterPassword">Enter Password</string>
     <string name="noAccount">Not have an account?</string>
     <string name="signUp">Sign Up</string>
     <string name="appName">Scope It</string>
