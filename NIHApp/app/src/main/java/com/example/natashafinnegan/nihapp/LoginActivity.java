@@ -22,6 +22,7 @@ import org.w3c.dom.Text;
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
+    private static final int REQUEST_IMAGE = 1;
 
     private Button login;
     private TextView appName;
@@ -149,5 +150,11 @@ public class LoginActivity extends AppCompatActivity {
             password.setCompoundDrawablesWithIntrinsicBounds(0,0,0,0);
         }
         return valid;
+    }
+
+    public void cameraTest(View v)
+    {
+        Intent i = new Intent(getApplicationContext(), CameraActivity.class);
+        startActivityForResult(i, REQUEST_IMAGE);
     }
 }
