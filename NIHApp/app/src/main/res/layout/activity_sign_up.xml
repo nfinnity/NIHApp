@@ -33,8 +33,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:text="@string/login"
+        android:id="@+id/username"
+        android:text="@string/username"
         android:textSize="15dp"
         android:textColor="#c3c6c7"
         android:layout_alignParentTop="true"
@@ -48,12 +48,37 @@
         android:hint="@string/username"
         android:id="@+id/usernameBox"
         android:textColorHint="#ffffff"
-        android:layout_below="@+id/login"
+        android:layout_below="@+id/username"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
- />
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="@string/email"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textColor="#c3c6c7"
+        android:layout_below="@+id/usernameBox"
+        android:layout_alignLeft="@+id/username"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="@string/enterEmail"
+        android:textColorHint="#ffffff"
+        android:inputType="text"
+        android:id="@+id/emailBox"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,11 +88,10 @@
         android:inputType="text"
         android:textSize="15dp"
         android:textColor="#c3c6c7"
-        android:layout_below="@+id/usernameBox"
-        android:layout_alignLeft="@+id/login"
-        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/emailBox"
+        android:layout_alignLeft="@+id/username"
         android:layout_marginTop="8dp"
-     />
+        />
 
     <EditText
         android:layout_width="300dp"
@@ -78,6 +102,8 @@
         android:id="@+id/passwordBox"
         android:layout_below="@+id/password"
         android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         />
 
     <android.support.v7.widget.AppCompatButton
@@ -89,16 +115,16 @@
         android:layout_below="@id/passwordBox"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="@string/login"/>
+        android:text="@string/signUp"/>
 
-    <TextView android:id="@+id/linkSignUp"
+    <TextView android:id="@+id/loginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:layout_marginTop="15dp"
         android:color="@color/buttonColor"
         android:layout_below="@+id/btn_login"
-        android:text="@string/noAccount"
+        android:text="@string/alreadyMember"
         android:layout_centerHorizontal="true"
         android:textSize="16dip"/>
 
