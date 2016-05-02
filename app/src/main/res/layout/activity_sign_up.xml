@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.natashafinnegan.nihapp.LoginActivity"
+        android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appName"
+        android:text="@string/appName"
+        android:textColor="#f9f9f9"
+        android:textSize="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/microscope"
+        android:id="@+id/microscope"
+        android:layout_below="@+id/loginLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:text="@string/username"
+        android:textSize="15dp"
+        android:textColor="#c3c6c7"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="33dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="@string/enterUsername"
+        android:id="@+id/usernameBox"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:text="@string/email"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textColor="#c3c6c7"
+        android:layout_below="@+id/usernameBox"
+        android:layout_alignLeft="@+id/username"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="@string/enterEmail"
+        android:textColorHint="#ffffff"
+        android:inputType="text"
+        android:id="@+id/emailBox"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:text="@string/password"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:textColor="#c3c6c7"
+        android:layout_below="@+id/emailBox"
+        android:layout_alignLeft="@+id/username"
+        android:layout_marginTop="8dp"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="@string/enterPassword"
+        android:textColorHint="#ffffff"
+        android:inputType="textPassword"
+        android:id="@+id/passwordBox"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/passwordBox"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/signUp"/>
+
+    <TextView android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
+        android:color="@color/buttonColor"
+        android:layout_below="@+id/btn_login"
+        android:text="@string/alreadyMember"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dip"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/loginLink"
+        />
+    </RelativeLayout>
+</ScrollView>

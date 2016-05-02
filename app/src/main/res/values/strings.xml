@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">NIHApp</string>
+
+    <color name="background">#16a6a9</color>
+    <color name="buttonColor">#0c9598</color>
+    <color name="prefTitleColor">#aaeae8</color>
+    <color name="grey">#f6f6f6</color>
+    <color name="white">#ffffff</color>
+
+
+    <!--Login Activity Strings-->
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="enterUsername">Enter Username</string>
+    <string name="password">Password</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="appName">Scope It</string>
+    <string name="loginFailed">Login Failed</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="noAccount">Don\'t have an account? Sign up</string>
+
+    <!--SignUp Activity Strings-->
+    <string name="email">Email</string>
+    <string name="enterEmail">Enter Email</string>
+    <string name="creatingAccount">Creating account...</string>
+    <string name="alreadyMember">Already a member? Login</string>
+    <string name="signUpFailed">Sign Up Failed</string>
+
+    <!--Camera Activity Strings-->
+    <string name="selectPhoto">Select Photo</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="chooseGallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="jpg">.jpg</string>
+    <string name="temp">temp.jpg</string>
+
+    <!--Login Settings Strings-->
+    <string name="title">Login Settings</string>
+    <string name="userInfo">User Info</string>
+    <string name="usrNamePref">usrNamePref</string>
+    <string name="autoLoginPref">autoLoginPref</string>
+    <string name="usrPasswordPref">usrPasswordPref</string>
+    <string name="rememberLogin">Remember login</string>
+    <string name="autoFillText">Auto fill info</string>
+
+    <!--Main Activity Strings-->
+    <string name="teleconsultButton">Email</string>
+    <string name="tutorialButton">Tutorial</string>
+
+    <!--Email Activity-->
+    <string name="recipient">To:</string>
+    <string name="enterRecipient">Enter recipient email</string>
+    <string name="subject">Subject:</string>
+    <string name="enterSubject">Enter email subject</string>
+    <string name="text">Content:</string>
+    <string name="enterText">Enter email body</string>
+    <string name="send">Send</string>
+    <string name="emailCode">message/rfc822</string>
+    <string name="sendTitle">Send mail...</string>
+    <string name="noClients">There are no email clients installed.</string>
+
+</resources>
