@@ -25,6 +25,7 @@
     <string name="enterEmail">Enter Email</string>
     <string name="creatingAccount">Creating account...</string>
     <string name="alreadyMember">Already a member? Login</string>
+<<<<<<< HEAD
     <string name="signUpFailed">Sign Up Failed</string>
 
     <!--Camera Activity Strings-->
@@ -61,4 +62,9 @@
     <string name="sendTitle">Send mail...</string>
     <string name="noClients">There are no email clients installed.</string>
 
+=======
+
+    <!--Camera Activity Strings-->
+    <string name="selectPhoto">Select Photo</string>
+>>>>>>> origin/master
 </resources>

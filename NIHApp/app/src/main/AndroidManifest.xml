@@ -25,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".SignUpActivity"
             android:screenOrientation="portrait" />
@@ -34,6 +35,10 @@
         <activity android:name=".loginSettings" />
         <activity android:name=".mainActivity" />
         <activity android:name=".emailActivity"></activity>
+=======
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".CameraActivity"></activity>
+>>>>>>> origin/master
     </application>
 
 </manifest>
