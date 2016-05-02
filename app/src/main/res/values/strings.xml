@@ -6,6 +6,7 @@
     <color name="prefTitleColor">#aaeae8</color>
     <color name="grey">#f6f6f6</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
 
 
     <!--Login Activity Strings-->
@@ -60,5 +61,12 @@
     <string name="emailCode">message/rfc822</string>
     <string name="sendTitle">Send mail...</string>
     <string name="noClients">There are no email clients installed.</string>
+
+    <!--Tutorial Activity Strings-->
+    <string name="videoTutorial">View Video Tutorial</string>
+    <string name="exitTutorial">Exit Tutorial</string>
+    <string name="textTutorial_Step1">1. Stabilize the phone by resting your hand on the left eyepiece of the microscope so that the phone\'s camera lens is aimed at the right eyepiece but several inches away.</string>
+    <string name="textTutorial_Step2">2. Slowly move the phone towards the right eyepiece of the microscope keeping it so the light is in the center of your screen.</string>
+    <string name="textTutorial_Step3">3. When the light fills the screen the image should now focus and you can take the picture using your free thumb.</string>
 
 </resources>
