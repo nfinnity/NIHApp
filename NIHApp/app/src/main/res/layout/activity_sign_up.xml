@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.natashafinnegan.nihapp.LoginActivity"
-    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.natashafinnegan.nihapp.LoginActivity"
+        android:background="@color/background"
     >
 
     <TextView
@@ -15,19 +19,18 @@
         android:text="@string/appName"
         android:textColor="#f9f9f9"
         android:textSize="50dp"
-        android:layout_marginLeft="75dp"
         android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
         />
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:src="@drawable/microscope"
         android:id="@+id/microscope"
-        android:layout_toRightOf="@+id/appName"
-        android:layout_toEndOf="@+id/appName"
-        android:layout_marginTop="42dp"
-        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/loginLink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         />
 
     <TextView
@@ -45,7 +48,7 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="45dp"
-        android:hint="@string/username"
+        android:hint="@string/enterUsername"
         android:id="@+id/usernameBox"
         android:textColorHint="#ffffff"
         android:layout_below="@+id/username"
@@ -120,7 +123,7 @@
     <TextView android:id="@+id/loginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
         android:layout_marginTop="15dp"
         android:color="@color/buttonColor"
         android:layout_below="@+id/btn_login"
@@ -128,4 +131,10 @@
         android:layout_centerHorizontal="true"
         android:textSize="16dip"/>
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/loginLink"
+        />
+    </RelativeLayout>
+</ScrollView>

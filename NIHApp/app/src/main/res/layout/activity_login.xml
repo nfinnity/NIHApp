@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.natashafinnegan.nihapp.LoginActivity"
-    android:background="@color/background"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.natashafinnegan.nihapp.LoginActivity"
+        android:background="@color/background"
     >
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_action_gear"
+        android:id="@+id/loginSettings"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:onClick="loginSettings"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,20 +32,20 @@
         android:id="@+id/appName"
         android:text="@string/appName"
         android:textColor="#f9f9f9"
-        android:textSize="50dp"
-        android:layout_marginLeft="75dp"
+        android:textSize="58dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         />
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
         android:src="@drawable/microscope"
         android:id="@+id/microscope"
-        android:layout_toRightOf="@+id/appName"
-        android:layout_toEndOf="@+id/appName"
-        android:layout_marginTop="42dp"
-        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/linkSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="13dp"
         />
 
     <TextView
@@ -94,7 +112,7 @@
     <TextView android:id="@+id/linkSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="15dp"
         android:color="@color/buttonColor"
         android:layout_below="@+id/btn_login"
@@ -102,4 +120,20 @@
         android:layout_centerHorizontal="true"
         android:textSize="16dip"/>
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/cameraTestBtn"
+        android:layout_width="1in"
+        android:layout_height="0.5in"
+        android:layout_below="@+id/microscope"
+        android:layout_centerHorizontal="true"
+        android:text="CAMERA TEST"
+        android:onClick="cameraTest"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/linkSignUp"
+        />
+    </RelativeLayout>
+</ScrollView>
