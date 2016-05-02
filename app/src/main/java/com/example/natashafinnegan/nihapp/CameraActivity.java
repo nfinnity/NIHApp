@@ -27,10 +27,6 @@ public class CameraActivity extends AppCompatActivity {
 
     ImageView viewImage;
     Button b;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +37,6 @@ public class CameraActivity extends AppCompatActivity {
 
     public void selectImage(View v) {
 
-<<<<<<< HEAD
         final CharSequence[] options = { getResources().getString(R.string.takePhoto), getResources().getString(R.string.chooseGallery),getResources().getString(R.string.cancel) };
 
         AlertDialog.Builder builder = new AlertDialog.Builder(CameraActivity.this);
@@ -57,33 +52,12 @@ public class CameraActivity extends AppCompatActivity {
                     startActivityForResult(intent, 1);
                 }
                 else if (options[item].equals(getResources().getString(R.string.chooseGallery)))
-=======
-        final CharSequence[] options = { "Take Photo", "Choose from Gallery","Cancel" };
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(CameraActivity.this);
-        builder.setTitle("Add Photo!");
-        builder.setItems(options, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int item) {
-                if (options[item].equals("Take Photo"))
-                {
-                    Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                    File f = new File(android.os.Environment.getExternalStorageDirectory(), "temp.jpg");
-                    intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(f));
-                    startActivityForResult(intent, 1);
-                }
-                else if (options[item].equals("Choose from Gallery"))
->>>>>>> origin/master
                 {
                     Intent intent = new   Intent(Intent.ACTION_PICK,android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                     startActivityForResult(intent, 2);
 
                 }
-<<<<<<< HEAD
                 else if (options[item].equals(getResources().getString(R.string.cancel))) {
-=======
-                else if (options[item].equals("Cancel")) {
->>>>>>> origin/master
                     dialog.dismiss();
                 }
             }
@@ -98,11 +72,7 @@ public class CameraActivity extends AppCompatActivity {
             if (requestCode == 1) {
                 File f = new File(Environment.getExternalStorageDirectory().toString());
                 for (File temp : f.listFiles()) {
-<<<<<<< HEAD
                     if (temp.getName().equals(getResources().getString(R.string.temp))) {
-=======
-                    if (temp.getName().equals("temp.jpg")) {
->>>>>>> origin/master
                         f = temp;
                         break;
                     }
@@ -118,18 +88,10 @@ public class CameraActivity extends AppCompatActivity {
 
                     String path = android.os.Environment
                             .getExternalStorageDirectory()
-<<<<<<< HEAD
                             + File.separator;
                     f.delete();
                     OutputStream outFile = null;
                     File file = new File(path, String.valueOf(System.currentTimeMillis()) + getResources().getString(R.string.jpg));
-=======
-                            + File.separator
-                            + "Phoenix" + File.separator + "default";
-                    f.delete();
-                    OutputStream outFile = null;
-                    File file = new File(path, String.valueOf(System.currentTimeMillis()) + ".jpg");
->>>>>>> origin/master
                     try {
                         outFile = new FileOutputStream(file);
                         bitmap.compress(Bitmap.CompressFormat.JPEG, 85, outFile);

@@ -176,7 +176,6 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), CameraActivity.class);
         startActivityForResult(i, REQUEST_IMAGE);
     }
-<<<<<<< HEAD
 
     public void onResume()
     {
@@ -187,6 +186,4 @@ public class LoginActivity extends AppCompatActivity {
         username.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
         checkAutoFill();
     }
-=======
->>>>>>> origin/master
 }

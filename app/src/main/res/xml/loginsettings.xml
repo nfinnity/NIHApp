@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/userInfo"
+        android:layout="@layout/preftextsize"
+        >
+
+        <EditTextPreference
+            android:title="@string/username"
+            android:summary="@string/enterUsername"
+            android:key="@string/usrNamePref"
+            android:defaultValue=""
+            />
+
+        <EditTextPreference
+            android:title="@string/password"
+            android:summary="@string/enterPassword"
+            android:key="@string/usrPasswordPref"
+            android:defaultValue=""
+            android:inputType="textPassword"
+            />
+
+        <CheckBoxPreference
+            android:title="@string/rememberLogin"
+            android:summary="@string/autoFillText"
+            android:key="@string/autoLoginPref"
+            android:defaultValue="false"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
