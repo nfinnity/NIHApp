@@ -9,7 +9,11 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    Read more: http://www.androidhub4you.com/2013/09/send-email-with-attachment-in-android.html#ixzz47VG0o58R
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +29,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
         <activity
             android:name=".SignUpActivity"
             android:screenOrientation="portrait" />
@@ -35,10 +38,6 @@
         <activity android:name=".loginSettings" />
         <activity android:name=".mainActivity" />
         <activity android:name=".emailActivity"></activity>
-=======
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".CameraActivity"></activity>
->>>>>>> origin/master
     </application>
 
 </manifest>

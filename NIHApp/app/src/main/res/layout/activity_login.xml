@@ -120,27 +120,11 @@
         android:layout_centerHorizontal="true"
         android:textSize="16dip"/>
 
-    <Button
-        android:id="@+id/cameraTestBtn"
-        android:layout_width="1in"
-        android:layout_height="0.5in"
-<<<<<<< HEAD
-        android:layout_below="@+id/microscope"
-        android:layout_centerHorizontal="true"
-        android:text="CAMERA TEST"
-        android:onClick="cameraTest"
-        />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@id/linkSignUp"
         />
     </RelativeLayout>
+
 </ScrollView>
-=======
-        android:layout_below="@+id/linkSignUp"
-        android:text="CAMERA TEST"
-        android:onClick="cameraTest"/>
-</RelativeLayout>
->>>>>>> origin/master

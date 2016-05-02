@@ -25,17 +25,9 @@
     <string name="enterEmail">Enter Email</string>
     <string name="creatingAccount">Creating account...</string>
     <string name="alreadyMember">Already a member? Login</string>
-<<<<<<< HEAD
     <string name="signUpFailed">Sign Up Failed</string>
 
     <!--Camera Activity Strings-->
-    <string name="selectPhoto">Select Photo</string>
-    <string name="takePhoto">Take Photo</string>
-    <string name="chooseGallery">Choose from Gallery</string>
-    <string name="cancel">Cancel</string>
-    <string name="addPhoto">Add Photo</string>
-    <string name="jpg">.jpg</string>
-    <string name="temp">temp.jpg</string>
 
     <!--Login Settings Strings-->
     <string name="title">Login Settings</string>
@@ -61,10 +53,16 @@
     <string name="emailCode">message/rfc822</string>
     <string name="sendTitle">Send mail...</string>
     <string name="noClients">There are no email clients installed.</string>
-
-=======
-
-    <!--Camera Activity Strings-->
     <string name="selectPhoto">Select Photo</string>
->>>>>>> origin/master
+    <string name="takePhoto">Take Photo</string>
+    <string name="chooseGallery">Choose from Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="jpg">.jpg</string>
+    <string name="temp">temp.jpg</string>
+    <string name="completeAction">Complete action using</string>
+    <string name="imageReturn">image/*</string>
+    <string name="dataReturn">return-data</string>
+    <string name="file">file://</string>
+
 </resources>
