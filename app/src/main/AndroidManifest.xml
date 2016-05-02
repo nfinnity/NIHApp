@@ -33,7 +33,8 @@
             android:screenOrientation="portrait" />
         <activity android:name=".loginSettings" />
         <activity android:name=".mainActivity" />
-        <activity android:name=".emailActivity"></activity>
+        <activity android:name=".emailActivity" />
+        <activity android:name=".TutorialActivity"></activity>
     </application>
 
 </manifest>

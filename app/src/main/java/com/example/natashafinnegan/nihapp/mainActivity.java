@@ -35,7 +35,8 @@ public class mainActivity extends AppCompatActivity {
     {
         if (view == tutorialButton)
         {
-
+            Intent i = new Intent(this, TutorialActivity.class);
+            startActivity(i);
         }
         else if (view == emailButton)
         {
